@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <p>Diamond Hands!</p>
-      <p>Wombo Pants</p>
+      <p>Milktea Madnesssss</p>
     </div>
   );
 }
