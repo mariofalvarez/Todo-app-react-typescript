@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "note": "uno i'll",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "note": "dos do",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "note": "tres it",
+    "completed": false
+  }
+]
