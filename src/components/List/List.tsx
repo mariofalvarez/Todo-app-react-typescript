@@ -1,6 +1,12 @@
-import './List.css';
 import React from 'react';
+
+import Delete from './Delete/Delete'
+import Edit from './Edit/Edit'
+import Task from './Task/Task'
 import data from './temp.json';
+import Toggle from './Toggle/Toggle'
+
+import './List.css';
 
 const List = () => {
   return (
@@ -14,6 +20,10 @@ const List = () => {
               <button className="save-btn">+</button>
               <button className="delete-btn">x</button>
             </div>
+            <Delete />
+            <Edit />
+            <Task />
+            <Toggle />
           </div>
         ))
       }
