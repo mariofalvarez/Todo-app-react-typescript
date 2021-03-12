@@ -6,9 +6,13 @@ The goal is of this web app is to practice on the development process: git colla
 
 ## Get Started
 1. clone repo
-   - HTTPS: `git clone https://github.com/mariofalvarez/Todo-app-react-typescript.git`
-   - SSH: `git@github.com:mariofalvarez/Todo-app-react-typescript.git`
-   - GH-CLI: `gh repo clone mariofalvarez/Todo-app-react-typescript`
+```md
+HTTPS  : git clone https://github.com/mariofalvarez/Todo-app-react-typescript.git
+
+SSH    : git clone git@github.com:mariofalvarez/Todo-app-react-typescript.git
+
+GH-CLI : gh repo clone mariofalvarez/Todo-app-react-typescript
+```
 2. `cd ./Todo-app-react-typescript`
 3. `npm install`
 4. `npm start`
