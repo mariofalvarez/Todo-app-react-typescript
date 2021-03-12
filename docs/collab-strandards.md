@@ -1,10 +1,10 @@
 # Collab Standards
 
+## Consistency
 - variables: camelCase
 - components: PascalCase
   - funtional components
   - arrow functions
-- consistency
 
 ## Data
 ```json
@@ -36,7 +36,7 @@ export default Comp
 
 ```jsx
 // with hooks
-import React, { useState,useEffect } from 'react'
+import React, { useState , useEffect } from 'react'
 import './Comp.css'
 
 const Comp = () => {
@@ -46,8 +46,7 @@ const Comp = () => {
 
   return (
     <div>
-      <h2>Hooks Example</h2>
-      <code>{ count }</code>
+      <h2>Hooks Example: <code>{ count }</code></h2>
       <button onClick={ handleClick }>+</button>
     </div>
   )

@@ -17,7 +17,7 @@
 3. go to terminal > `git pull` (from master)
 
 ## Daily Workflow
-- **mornings**: 
+- **mornings**: `npm run updates`
   - `git pull` for any new updates from the project
   - `npm install` for any new packages
 - **nights**: `git push origin [branch-name]` for any work that is done

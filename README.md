@@ -14,11 +14,11 @@ The goal is of this web app is to practice on the development process: git colla
 4. `npm start`
 
 ## Features List
-- todo: add task to todo list
-- task: view & edit task from todo list
-- save: insert updated task from todo list
-- delete: remove task from todo list
-- toggle: change task as (in)completed
+- **Todo** : add task to todo list
+- **Task** : view & edit task from todo list
+- **Edit** : save updated task from todo list
+- **Delete** : remove task from todo list
+- **Toggle** : update task as (in)completed
 
 ## Technologies Used
 React - TypeScript
