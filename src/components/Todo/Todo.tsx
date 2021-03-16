@@ -3,8 +3,11 @@ import React from 'react'
 function Todo() {
     return (
         <div>
-            <h2>Billy Bobby Molly</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate cupiditate nostrum rerum aperiam cum distinctio libero veniam quaerat accusantium, sunt sit incidunt sed natus placeat doloremque numquam commodi minus. Tenetur.</p>
+            <div className="container">
+                <h2>Todo</h2>
+                    <button>Edit</button>
+                    <button>Delete</button>
+            </div>
         </div>
     )
 }
