@@ -9,16 +9,11 @@ import 'normalize-css'
 
 function App () {
   const [data, setData] = useState<any[]>([])
-
-  useEffect(() => {
-    setData(TempData)
-    console.log(data)
-  }
-  , [data])
+  useEffect(() => { setData(TempData) },[])
 
   return (
     <div className="App">
-      <List data={data}/>
+      <List data={data} setData={setData} />
       <Todo />
     </div>
   );
