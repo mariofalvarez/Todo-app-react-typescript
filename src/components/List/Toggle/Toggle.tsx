@@ -5,7 +5,7 @@ import './Toggle.css'
 const Toggle = () => {
   return (
     <div>
-      <h1>Vercada</h1>
+      <h1>T</h1>
     </div>
   )
 }

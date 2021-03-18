@@ -5,7 +5,7 @@ import './Edit.css'
 const Edit = () => {
   return (
     <div>
-      <h1>Vercada</h1>
+      <h1>E</h1>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import './Delete.css'
 const Delete = () => {
   return (
     <div>
-      <h1>Vercada</h1>
+      <h1>D</h1>
     </div>
   )
 }

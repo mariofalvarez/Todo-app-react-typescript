@@ -11,12 +11,12 @@ const List = (props: any) => {
   return (
     <section className="todo-list">
       {
-        props.data.length && props.data.map((task: any,idx: any) => (
+        props.data.length && props.data.map((task: any, idx: any) => (
           <div key={idx} data-id={idx}>
             <Delete />
             <Edit />
             <Task />
-            <Toggle />
+            <Toggle   />
           </div>
         ))
       }
