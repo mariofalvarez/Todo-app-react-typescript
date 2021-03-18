@@ -11,23 +11,15 @@ function Todo() {
         setTodo(e.target.value)
         console.log(e)
     }
-    // const handleTodo = (e: any) => {
-        
-    // }
+    
+    // const handleTodo = (e: any) => {}
+    // useEffect = () => {}
 
     return (
-        <div className="todo">
-            {
-                <input 
-                className="todo-box"
-                type="input" 
-                name="todo"
-                placeholder="Type here..."
-                value={ todo }
-                onClick={ handleClick }
-              />
-            }
-        </div>
+        <form className="todo-form">
+            <input type="text" placeholder="Type here" />
+            <input type="submit" value={ todo } onClick= { handleClick } />
+        </form>
     )
 }
 
