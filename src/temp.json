@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "note": "uno i'll",
+    "note": "task uno 1",
     "completed": false
   },
   {
     "id": 2,
-    "note": "dos do",
+    "note": "task dos 2",
     "completed": false
   },
   {
     "id": 3,
-    "note": "tres it",
+    "note": "task tres 3",
     "completed": false
   }
 ]

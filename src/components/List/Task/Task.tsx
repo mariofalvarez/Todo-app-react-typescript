@@ -1,35 +1,35 @@
 import React, { useState } from 'react'
 import './Task.css'
-
+  
 const ESC_KEY = 27
 
 const Task = (props: any) => {
   const [task, setTask] = useState(props.task.note)
-  const [toggle, setToggle] = useState(true)
+  const [isToggle, setIsToggle] = useState(false)
 
   const placeholder = (task.length) ? task : props.task.note
-  const toggleTask = (e: any) => setToggle(!toggle)
-  const handleChange = (e: any) => setTask(e.target.value)
+  const toggleTask = (e: any) => setIsToggle(!isToggle)
+  const handleValueChange = (e: any) => setTask(e.target.value)
   
   const handleSave = (e: any) => {
     const key = e.which || e.keyCode || e.charCode
     if (e.type === 'keyup' && key !== ESC_KEY) return
     (task.length) ? setTask(task) : setTask(props.task.note)
-    setToggle(!toggle)
-    if (task.length) saveData(e)
+    setIsToggle(!isToggle)
+    if (task.length) saveData()
   }
 
-  const saveData = (e: any) => {
+  const saveData = () => {
     const newData = [...props.data]
-    const taskItem = {...props.task, note:task }
+    const taskItem = {...props.task , note:task }
     newData[props.id] = taskItem
     props.setData(newData)
   }
 
   return (
-    <div className="task-text">
+    <div className="task-note">
       {
-        (toggle) 
+        (!isToggle) 
         ? (<p 
           onClick={ toggleTask }
         >{ placeholder }</p>)
@@ -43,7 +43,7 @@ const Task = (props: any) => {
           spellCheck="false"
           autoFocus
           value={ task }
-          onChange={ handleChange }
+          onChange={ handleValueChange }
           onKeyUp={ handleSave }
           onBlur={ handleSave }
         />)
