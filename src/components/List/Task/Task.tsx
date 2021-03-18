@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import './Task.css'
   
-const ESC_KEY = 27
+const [ESC_KEY,ENTER_KEY] = [27,13]
 
 const Task = (props: any) => {
-  const [task, setTask] = useState(props.task.note)
+  const [task, setTask] = useState(props.data[props.id].note)
   const [isToggle, setIsToggle] = useState(false)
 
   const placeholder = (task.length) ? task : props.task.note
   const toggleTask = (e: any) => setIsToggle(!isToggle)
   const handleValueChange = (e: any) => setTask(e.target.value)
-  
+
   const handleSave = (e: any) => {
     const key = e.which || e.keyCode || e.charCode
-    if (e.type === 'keyup' && key !== ESC_KEY) return
+    if (e.type === 'keyup' && key !== ESC_KEY && key !== ENTER_KEY) return
     (task.length) ? setTask(task) : setTask(props.task.note)
     setIsToggle(!isToggle)
     if (task.length) saveData()
