@@ -1,0 +1,39 @@
+.todo-list {
+  max-width: 300px;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+}
+
+.task-note p 
+{ border: 2px solid #b4b4b4; }
+.task-note input,
+.task-note input:focus 
+{ border: 2px solid #000; }
+.task-note p, 
+.task-note input 
+{
+  outline: none;
+  border-radius: 0.3em;
+  width: 200px;
+  padding: 0.3em;
+  margin: 1em 0;
+  margin-left: 0.5em;
+}
+
+.task-check {
+  --size: 20px;
+  border: 2px solid #000;
+  border-radius: 0.3em;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+}
+
+.complete {
+  display: none;
+}
+.complete:checked + label {
+  background: #000;
+}
