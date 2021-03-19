@@ -16,7 +16,7 @@ const Delete = (props: any) => {
       <button
         className="delete"
         onClick={ handleDelete }
-      >x</button>
+      >✖</button>
     </div>
   )
 }

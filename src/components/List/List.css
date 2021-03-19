@@ -1,3 +1,7 @@
+.todo-list input,
+.todo-list button
+{ outline: none; }
+
 .todo-list {
   max-width: 300px;
 }
@@ -14,12 +18,10 @@
 .task-note p, 
 .task-note input 
 {
-  outline: none;
   border-radius: 0.3em;
   width: 200px;
   padding: 0.3em;
-  margin: 1em 0;
-  margin-left: 0.5em;
+  margin: 1em 0.5em;
 }
 
 .task-check {
@@ -29,11 +31,32 @@
   width: var(--size);
   height: var(--size);
   display: inline-block;
+  position: relative;
+  vertical-align: bottom;
 }
 
-.complete {
-  display: none;
-}
+.complete { display: none; }
 .complete:checked + label {
-  background: #000;
+  background: green;
+  display: grid;
+  place-content: center;
+}
+.complete:checked + label::before {
+  content: '✔';
+  color: #e3e3e3;
+}
+
+.delete {  
+  border: none;
+  border-radius: 0.3em;
+  background: #b4b4b4;
+}
+.delete:hover,
+.delete:focus
+{ 
+  background: red;
+  color: #e3e3e3;
+}
+.delete:active {
+  background: darkred;
 }
