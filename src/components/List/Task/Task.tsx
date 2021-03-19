@@ -41,7 +41,6 @@ const Task = (props: any) => {
           autoCorrect="off"
           autoCapitalize="off"
           spellCheck="false"
-          autoFocus
           value={ task }
           onChange={ handleValueChange }
           onKeyUp={ handleSave }
