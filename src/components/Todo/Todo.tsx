@@ -4,8 +4,9 @@ import List from '../List/List'
 
 import './Todo.css'
 
-function Todo() {
+const Todo = (props: any) => {
     const [todo, setTodo] = useState('')
+    // const [] = useState()
 
     const handleClick = (e: any) => {
         setTodo(e.target.value)
