@@ -8,4 +8,8 @@ html,body,#root {
 #root {
   display: grid;
   place-content: center;
+
+.App {
+    background-color: lightblue;
+    width: 400px
 }
