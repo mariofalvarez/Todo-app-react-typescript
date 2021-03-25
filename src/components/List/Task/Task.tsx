@@ -5,17 +5,17 @@ const [ESC_KEY,ENTER_KEY] = [27,13]
 
 const Task = (props: any) => {
   const [task, setTask] = useState(props.data[props.id].note)
-  const [isToggle, setIsToggle] = useState(false)
+  const [isFocus, setIsFocus] = useState(false)
 
   const placeholder = (task.length) ? task : props.task.note
-  const toggleTask = (e: any) => setIsToggle(!isToggle)
+  const toggleTask = (e: any) => setIsFocus(!isFocus)
   const handleValueChange = (e: any) => setTask(e.target.value)
 
   const handleSave = (e: any) => {
     const key = e.which || e.keyCode || e.charCode
     if (e.type === 'keyup' && key !== ESC_KEY && key !== ENTER_KEY) return
     (task.length) ? setTask(task) : setTask(props.task.note)
-    setIsToggle(!isToggle)
+    setIsFocus(!isFocus)
     if (task.length) saveData()
   }
 
@@ -29,7 +29,7 @@ const Task = (props: any) => {
   return (
     <div className="task-note">
       {
-        (!isToggle) 
+        (!isFocus) 
         ? (<p 
           onClick={ toggleTask }
         >{ placeholder }</p>)

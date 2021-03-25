@@ -13,10 +13,10 @@ const List = (props: any) => {
       {
         props.data.map((task: any, idx: any) => (
           <div key={ task.id } className="task-item">
-            <Toggle id={ idx } task={ task } data={ props.data } setData={ props.setData } />
-            <Task id={ idx } task={ task } data={ props.data } setData={ props.setData } />
+            <Toggle id={ idx } task={ task } {...props} />
+            <Task id={ idx } task={ task } {...props} />
             <Edit />
-            <Delete id={ idx } task={ task } data={ props.data } setData={ props.setData } />
+            <Delete id={ idx } task={ task } {...props} />
           </div>
         ))
       }
