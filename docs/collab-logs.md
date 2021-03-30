@@ -1,10 +1,20 @@
-# Collab Logs
+# Collab Logs (Current Task)
+
+## Mar - 25, Thurs
+
+- [x] Micky: done
+- [ ] Mario: 
+  - [ ] priority: make a noted plan for Todo Component
+  - [x] connect data App component
+  - [ ] bonus: validation
 
 ## Mar - 24, Wed
+
 - [x] Micky: done
 - [ ] Mario: continue on Todo Component
+  - [x] research props to use it
   - [ ] implement basic styling
-  - [ ] push data to dom from the array
+  - [x] push data to dom from the array
 
 ## Mar - 18, Thurs
 
