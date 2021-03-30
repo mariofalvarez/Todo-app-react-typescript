@@ -17,6 +17,7 @@
 - [ ] style web app
   - [ ] Todo
   - [ ] List
+- [x] deploy to netflify
 
 ## Feature List
 - [ ] Todo
