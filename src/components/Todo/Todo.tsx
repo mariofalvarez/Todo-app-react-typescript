@@ -2,12 +2,10 @@ import React from 'react'
 
 import './Todo.css'
 
-const Todo = (props: any) => {
-
+const Todo = (props: any) => {    
     return (
         <form className="todo">
-            <input placeholder="Task" />
-            <button type="submit" onClick={props.setData} > Create Todo </button>
+            <input type="text" placeholder="Task" onChange={(event) => {props.onChange(event.target.value)}} />
         </form>
     )
 }

@@ -18,7 +18,7 @@ function App () {
       <header>
         <h1>Todo List!</h1>
       </header>
-      <Todo data={data} setData={setData} />
+      <Todo data={data} setData={setData} onChange={(value: any) => setData(value)} />
     <br></br>
       { data.length && <List data={data} setData={setData} /> }
     </div>
