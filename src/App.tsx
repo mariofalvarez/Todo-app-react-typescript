@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
+import TempData from './assets/temp.json'
 import List from './components/List/List'
 import Todo from './components/Todo/Todo'
-import TempData from './assets/temp.json'
 
 import './assets/style.css'
 import './assets/test.css'
@@ -18,7 +18,7 @@ function App () {
       <header>
         <h1>Todo List!</h1>
       </header>
-      <Todo data={data} setData={setData} onChange={(value: any) => setData(value)} />
+      <Todo data={data} setData={setData} />
     <br></br>
       { data.length && <List data={data} setData={setData} /> }
     </div>

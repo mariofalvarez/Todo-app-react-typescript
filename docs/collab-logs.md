@@ -3,8 +3,8 @@
 ## Mar - 25, Thurs
 
 - [x] Micky: done
-- [ ] Mario: 
-  - [ ] priority: make a noted plan for Todo Component
+- [ ] Mario:
+  - [x] priority: make a noted plan for Todo Component
   - [x] connect data App component
   - [ ] bonus: validation
 
@@ -14,7 +14,7 @@
 
 - [ ] Mario: push data to dom from array on Todo Component
   - [x] research props to use it
-  - [ ] implement basic styling
+  - [x] implement basic styling
   - [x] push data to dom from the array
 
 ## Mar - 18, Thurs
