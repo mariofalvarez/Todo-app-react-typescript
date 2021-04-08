@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Delete from './Delete/Delete'
-import Edit from './Edit/Edit'
 import Task from './Task/Task'
 import Toggle from './Toggle/Toggle'
 
@@ -15,7 +14,6 @@ const List = (props: any) => {
           <div key={ task.id } className="task-item">
             <Toggle id={ idx } task={ task } {...props} />
             <Task id={ idx } task={ task } {...props} />
-            <Edit />
             <Delete id={ idx } task={ task } {...props} />
           </div>
         ))

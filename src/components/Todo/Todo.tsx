@@ -40,7 +40,7 @@ export default Todo
 // 4. updated state of data through props - the spread operater
 // 5. clear input text back to default blank
 
-// Checklist:
+// handleChange Checklist:
 // 1. Created the handleChange function
 // 2. added function to onChange event
 // 3. saved user input to state
